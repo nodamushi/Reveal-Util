@@ -1,7 +1,7 @@
 {
 	"name": "reveal-util",
 	"displayName": "Reveal Util",
-	"description": "Provides utility commands for users who have the noReaval option set to false",
+	"description": "Provides utility commands for users who have the autoReaval option set to false",
 	"version": "1.0.0",
 	"license": "Unlicense",
 	"icon": "images/icon.png",
