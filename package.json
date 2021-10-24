@@ -1,0 +1,79 @@
+{
+	"name": "reveal-util",
+	"displayName": "Reveal Util",
+	"description": "Provides utility commands for users who have the noReaval option set to false",
+	"version": "1.0.0",
+	"license": "Unlicense",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.61.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nodamushi/Reveal-Util"
+	},
+	"publisher": "nodamushi",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:reveal-util.showActiveFileInExplorer",
+		"onCommand:reveal-util.newFile",
+		"onCommand:reveal-util.newFolder"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "reveal-util.showActiveFileInExplorer",
+				"title": "Focus Explorer",
+				"category": "Reveal Util"
+			},
+			{
+				"command": "reveal-util.newFile",
+				"title": "New File",
+				"category": "Reveal Util"
+			},
+			{
+				"command": "reveal-util.newFolder",
+				"title": "New Folder",
+				"category": "Reveal Util"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "reveal-utility.newFile",
+				"key": "ctrl+n",
+				"mac": "cmd+n",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "reveal-utility.newFolder",
+				"key": "ctrl+shift+n",
+				"mac": "cmd+shift+n",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/vscode": "^1.61.0",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"@vscode/test-electron": "^1.6.2",
+		"eslint": "^7.32.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.1",
+		"typescript": "^4.4.3"
+	}
+}
