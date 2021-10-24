@@ -22,6 +22,10 @@ If you want to set key bindings for this command, put `editorTextFocus` in the `
 
 ![New File](images/newfile.gif)
 
+Sample (Emacs like) keybind:
+
+![New File Keybind](images/newfile_keybind.png)
+
 ### New Folder
 
 - command: `reveal-util.newFolder`
