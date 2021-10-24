@@ -2,7 +2,7 @@
 	"name": "reveal-util",
 	"displayName": "Reveal Util",
 	"description": "Provides utility commands for users who have the autoReaval option set to false",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "Unlicense",
 	"icon": "images/icon.png",
 	"engines": {
@@ -43,15 +43,9 @@
 		],
 		"keybindings": [
 			{
-				"command": "reveal-utility.newFile",
+				"command": "reveal-util.newFile",
 				"key": "ctrl+n",
 				"mac": "cmd+n",
-				"when": "editorTextFocus"
-			},
-			{
-				"command": "reveal-utility.newFolder",
-				"key": "ctrl+shift+n",
-				"mac": "cmd+shift+n",
 				"when": "editorTextFocus"
 			}
 		]

@@ -38,6 +38,10 @@ No settings.
 
 ## Release Notes
 
+### 1.0.1
+
+- Fix keybinding command
+
 ### 1.0.0
 
 Initial release
